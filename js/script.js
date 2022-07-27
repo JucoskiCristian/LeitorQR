@@ -21,11 +21,12 @@ const dia = date.getDate();
 const mes = date.getMonth() + 1; 
 
 if((ano - data.slice(4,8) < 5)){
-    document.getElementById("valida").innerHTML = "Esta na Validade";
+    document.getElementById("valida").innerHTML = "Está na Validade";
 }else if(mes - data.slice(2,4) < 0 ){
-    document.getElementById("valida").innerHTML = "Esta na Validade";
+    document.getElementById("valida").innerHTML = "Está na Validade";
 }else {
-    document.getElementById("invalida").innerHTML = "Esta na Fora da Validade";
+    document.getElementById("invalida").innerHTML = "Está na Fora da Validade";
+    document.getElementById("botao").style.display = "block";
 }
 
 document.getElementById("fabricante").innerHTML = Fabricantes[obj[0]];
