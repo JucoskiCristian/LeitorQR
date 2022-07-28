@@ -12,9 +12,16 @@
 
     <title>Leitor QR</title>
 
+    <style>
+        .teste {
+            background-color: #bbc2ca;
+            background-image: url("data:image/svg+xml,%3Csvg width='8' height='7' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23416dca' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+
 </head>
 
-<body class="h-ful flex flex-col items-center gap-1 bg-blue-50">
+<body class="h-ful flex flex-col items-center bg-blue-100">
     <div class="mb-3">
         <h1 class="font-semibold text-5xl text-center">
             Redex Redes de proteção
@@ -23,31 +30,36 @@
             Validade rede de proteção
         </h2>
     </div>
-    <div class=" border border-gray-600 rounded-md p-6 divide-y divide-dashed divide-gray-600">
+    <div class="w-64 border border-black border-b-0 flex items-center justify-center teste rounded-t-md">
+        <div class="m-2 bg-blue-100 w-5 h-5 border-2 border-black rounded-full">
+        </div>
+    </div>
+    <div
+        class="w-64 border border-gray-600 rounded-b-md p-6 divide-y divide-dashed divide-gray-600 teste shadow-lg shadow-black">
         <div class="text-center">
-            <label for="Fabricante" class="font-semibold text-xl block">Fabricante:</label>
-            <span id="fabricante" class=" font-semibold text-lg text-blue-800"></span>
+            <label for="Fabricante" class="font-medium text-xl block">Fabricante:</label>
+            <span id="fabricante" class=" font-semibold text-lg text-sky-700"></span>
         </div>
         <div class="text-center">
-            <label for="Cor" class="font-semibold text-xl block">Cor:</label>
-            <span id="cor" class="font-semibold text-lg text-blue-800"></span>
+            <label for="Cor" class="font-medium text-xl block">Cor:</label>
+            <span id="cor" class="font-semibold text-lg text-sky-700"></span>
         </div>
         <div class="text-center">
-            <label for="Malhas" class="font-semibold text-xl block">Malha:</label>
-            <span id="malha" class="font-semibold text-lg text-blue-800"></span>
+            <label for="Malhas" class="font-medium text-xl block">Malha:</label>
+            <span id="malha" class="font-semibold text-lg text-sky-700"></span>
         </div>
         <div class="text-center">
-            <label for="Ganchos" class="font-semibold text-xl block">Ganchos:</label>
-            <span id="gancho" class="font-semibold text-lg text-blue-800"></span>
+            <label for="Ganchos" class="font-medium text-xl block">Ganchos:</label>
+            <span id="gancho" class="font-semibold text-lg text-sky-700"></span>
         </div>
         <div class="text-center">
-            <label for="Data Instalação" class="font-semibold text-xl block">Data Instalação:</label>
-            <span id="data" class="font-semibold text-lg text-blue-800"></span>
+            <label for="Data Instalação" class="font-medium text-xl block">Data Instalação:</label>
+            <span id="data" class="font-semibold text-lg text-sky-700"></span>
         </div>
         <div class="text-center">
-            <label for="Validade" class="font-semibold text-xl block">Validade:</label>
-            <span id="valida" class="font-semibold text-lg text-green-800"></span>
-            <span id="invalida" class="font-semibold text-lg text-red-800"></span>
+            <label for="Validade" class="font-medium text-xl block">Validade:</label>
+            <span id="valida" class="font-semibold text-xl text-green-800"></span>
+            <span id="invalida" class="font-semibold text-xl text-red-800"></span>
         </div>
     </div>
     <div id="botao" class="hidden">
